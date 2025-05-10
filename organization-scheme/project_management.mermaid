@@ -1,0 +1,30 @@
+graph TD
+    ProjectTitle["Sonya Topluluğu - Türkiye Deprem İzleme Sistemi<br/><small>TDIS API & Open Source</small>"]
+    
+    ProjeHedefleri["Proje Hedefleri ve Prensipleri<br/><small>• Tamamen açık kaynak ve ücretsiz hizmet<br/>• Sonya Topluluğu'na ait<br/>• Gönüllü katkı temelli<br/>• GitHub Projects ile proje yönetimi</small>"]
+    
+    ProjeLideri["Furkan Zihni Özen - Proje Lideri<br/><small>• Proje vizyonu ve stratejik planlama<br/>• Ürün yol haritası ve önceliklendirme<br/>• Paydaş yönetimi ve iletişim</small>"]
+    
+    ProjeKoordinatoru["Nefise Nur Genç - Proje Koordinatörü<br/><small>• Günlük operasyonların yönetimi<br/>• Ekip koordinasyonu ve iletişim<br/>• GitHub Projects ile görev takibi</small>"]
+    
+    YardimciKoordinatoru["Evren Yalnız - Yardımcı Proje Koordinatörü<br/><small>• Toplantı organizasyonu<br/>• Dokümantasyon yönetimi<br/>• Ekipler arası iletişim koordinasyonu</small>"]
+    
+    ScrumMaster["Mertcan Sağlam - Scrum Master<br/><small>• Scrum süreçlerinin yönetimi<br/>• Sprint planlama ve takibi<br/>• Engellerin kaldırılması ve ekip facilitasyonu</small>"]
+    
+    ScrumYonetimi["Scrum Yönetimi<br/><small>• 2 haftalık sprintler<br/>• Daily Scrum (Google Meets, 15dk)<br/>• Sprint Planning (Pazartesi)<br/>• Sprint Review (Cuma)<br/>• Retrospective (Cuma)</small>"]
+    
+    GitHubYonetimi["GitHub Yönetimi<br/><small>• GitHub Projects ile backlog yönetimi<br/>• Feature branch workflow<br/>• Pull request ve code review<br/>• CI/CD pipeline (GitHub Actions)</small>"]
+    
+    IletisimKanallari["İletişim Kanalları<br/><small>• Slack (Günlük iletişim)<br/>• Google Meet (Toplantılar)<br/> • GitHub Discussions (Teknik tartışmalar)<br/> • GitHub Docs (Dökümantasyon)</small>"]
+    
+    DokumantasyonSorumlusu["Sevdanur Aydoğan - Dokümantasyon Sorumlusu<br/><small>• Teknik dokümantasyon standartları<br/>• API dokümantasyonu<br/>• Kullanıcı kılavuzları</small>"]
+    
+    ProjectTitle --> ProjeHedefleri
+    ProjeHedefleri --> ProjeLideri
+    ProjeLideri --> ProjeKoordinatoru
+    ProjeLideri --> YardimciKoordinatoru
+    ProjeKoordinatoru --> ScrumMaster
+    ProjeKoordinatoru --> GitHubYonetimi
+    YardimciKoordinatoru --> IletisimKanallari
+    YardimciKoordinatoru --> DokumantasyonSorumlusu
+    ScrumMaster --> ScrumYonetimi
