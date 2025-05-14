@@ -1,6 +1,6 @@
 # Deprem Araştırma ve Farkındalık Projesi PR Departmanı Yapılandırması
 
-PR departmanınız için kapsamlı bir organizasyon yapısı hazırladım. Gönderdiğiniz gönüllü listesindeki kişilerin uzmanlık alanlarını ve isteklerini dikkate alarak, etkin bir iş akışı ve görev dağılımı planladım.
+PR departmanını için kapsamlı bir organizasyon yapısı hazırladık. Gönderdiğiniz gönüllü listesindeki kişilerin uzmanlık alanlarını ve isteklerini dikkate alarak, etkin bir iş akışı ve görev dağılımı planladık.
 
 ## PR Departmanı Organizasyon Şeması
 
