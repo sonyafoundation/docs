@@ -1,0 +1,37 @@
+sequenceDiagram
+    participant IU as İçerik Üreticisi
+    participant ED as Editör (Ceren)
+    participant YK as Yönetim Kurulu Temsilcisi
+    participant SM as Sosyal Medya Yöneticisi
+    
+    IU->>ED: İçerik Taslağı Gönderir
+    Note over IU,ED: Deadline: İçerik gününden 5 gün önce
+    
+    ED->>ED: İçerik Düzenleme ve Geliştirme
+    Note over ED: Maximum 24 saat içinde
+    
+    ED->>YK: Onay için İçerik İletilir
+    Note over ED,YK: Trello üzerinden ilgili karta eklenir
+    
+    YK->>YK: İçerik Kontrolü
+    Note over YK: Maximum 24 saat içinde
+    
+    alt İçerik Onaylanmadı
+        YK->>ED: Revizyon Talepleri
+        ED->>IU: Revizyon Geri Bildirimi
+        IU->>ED: Revize Edilmiş İçerik
+        ED->>YK: Revize İçerik Onayı
+    end
+    
+    YK->>SM: Onaylanan İçerik İletilir
+    Note over YK,SM: Minimum yayın tarihinden 2 gün önce
+    
+    SM->>SM: İçerik Formatı Platformlara Uyarlanır
+    Note over SM: Maximum 24 saat içinde
+    
+    SM->>YK: Son Kontrol
+    Note over SM,YK: Hızlı kontrol - max 2 saat
+    
+    YK->>SM: Yayın Onayı
+    
+    SM->>SM: İçerik Planlanır ve Yayınlanır
